@@ -63,7 +63,7 @@
 <#elseif item?is_number>
 <#t>"${key?js_string}":${item?string.computer}
 <#elseif item?is_string>
-<#t>"${key?js_string}":"${item?js_string}"
+<#t>"${key?js_string}":"${item?json_string}"
 <#elseif item?is_boolean>
 <#t>"${key?js_string}":${item?string}
 <#elseif item?is_date>
